@@ -53,4 +53,7 @@ def create():
 
 # run the server
 port = int(os.environ["PORT"])
+print("Valores:")
+print(os.environ["DB_USERNAME"])
+print(os.environ["DB_PASSWORD"])
 app.run(host="0.0.0.0", port=port)
